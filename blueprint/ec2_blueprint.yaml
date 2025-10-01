@@ -1,0 +1,59 @@
+spec_version: 2
+description: 'Torque auto generated blueprint'
+inputs:
+  AMIS:
+    type: 'string'
+    default: "{\n  \"us-east-1\": \"ami-08982f1c5bf93d976\"\n}"
+  PUB_KEY:
+    type: 'string'
+    default: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCHFXlATI6c26UN/...'
+  REGION:
+    type: 'string'
+    default: 'us-east-1'
+  USER:
+    type: 'string'
+    default: 'ubuntu'
+  ZONE1:
+    type: 'string'
+    default: 'us-east-1a'
+  ZONE2:
+    type: 'string'
+    default: 'us-east-1b'
+  ZONE3:
+    type: 'string'
+    default: 'us-east-1c'
+  provider_profile:
+    type: 'string'
+    default: 'default'
+  agent:
+    type: 'agent'
+outputs:
+  PublicIP:
+    value: '{{ .grains.ec2_instance.outputs.PublicIP }}'
+    quick: true
+grains:
+  ec2_instance:
+    kind: 'terraform'
+    spec:
+      source:
+        store: 'buildcircle_ec2'
+        path: '.'
+      authentication:
+        - 'aws'
+      agent:
+        name: '{{ .inputs.agent }}'
+      env-vars:
+
+      namespace: 'default'
+      version: '1.5.5'
+      inputs:
+        - AMIS: '{{ .inputs.AMIS }}'
+        - PUB_KEY: '{{ .inputs.PUB_KEY }}'
+        - REGION: '{{ .inputs.REGION }}'
+        - USER: '{{ .inputs.USER }}'
+        - ZONE1: '{{ .inputs.ZONE1 }}'
+        - ZONE2: '{{ .inputs.ZONE2 }}'
+        - ZONE3: '{{ .inputs.ZONE3 }}'
+        - provider_profile: '{{ .inputs.provider_profile }}'
+      outputs:
+        - 'PublicIP'
