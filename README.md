@@ -12,7 +12,7 @@ Steps Performed
 
 <img width="1475" height="375" alt="connected_agent" src="https://github.com/user-attachments/assets/2b1f067a-341f-4c0e-af3f-47d5fb6dc6b5" />
 <br><br>
-2. Created and Commit Terraform Module
+2. Created and committed Terraform Module
 	•	Created terraform/ directory.
 	•	Wrote Terraform configuration to provision a single EC2 instance:
 	•	Initialized module with terraform init.
