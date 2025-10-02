@@ -5,7 +5,7 @@ This repository contains a simple Terraform module and Torque blueprint used to 
 Steps Performed
 
 1. Install Torque Agent
-	•	Logged into Torque dashboard and navigated to Agents.
+	•	Logged into the Torque dashboard and navigated to Agents.
 	•	Installed a Kubernetes-based Torque agent in AWS EKS.
 	•	Verified the agent status in Torque UI (green and connected).
 
@@ -24,7 +24,7 @@ Steps Performed
 3. Connect Repo in Torque
 	•	Navigated to Repositories in Torque.
 	•	Added Git repository URL and selected branch.
-	•	Synced repository to discover Terraform module as a grain.
+	•	Synced the repository to discover the Terraform module as a grain.
 
 
 <img width="1466" height="742" alt="connnected_reposipory" src="https://github.com/user-attachments/assets/006a0f24-2eb8-49d7-9929-faaaf482754d" />
@@ -40,8 +40,8 @@ Steps Performed
 <br><br>
 
 5. Launch the Environment
-	•	Launched environment from blueprint.
-	•	Monitored launch logs and ensured environment reached “Running” state.
+	•	Launched the environment from a blueprint.
+	•	Monitored launch logs and ensured the environment reached “Running” state.
 	•	Verified EC2 instance in AWS console.
 
 
@@ -52,7 +52,7 @@ Steps Performed
 
 6. Outputs
 	•	Exposed PublicIP output from Terraform grain in blueprint.
-	•	Verified that the output is accessible from Torque environment details.
+	•	Verified that the output is accessible from the Torque environment details.
 
 <img width="1466" height="943" alt="outputs" src="https://github.com/user-attachments/assets/edc96749-793b-46f5-8814-ffef05c9c100" />
 <br><br>
