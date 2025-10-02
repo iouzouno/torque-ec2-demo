@@ -67,10 +67,11 @@ Challenges & Optimizations
 Conclusion
 Torque is a really strong tool for automating infrastructure orchestration. It gives you fine-grained control over provisioning, helps with user management, provides budget insights, and even tracks drift, along with a lot of other useful features.
 
-That said, the on-prem setup can be a bit complex. You generally need someone with solid DevOps or CloudOps experience to get a Kubernetes cluster up and running for the agent. For some customers, a bit of extra onboarding help or professional services could make that first setup a lot smoother.
+The on-prem setup can be a bit complex. You generally need someone with solid DevOps or CloudOps experience to get a Kubernetes cluster up and running for the agent. For some customers, a bit of extra onboarding help or professional services could make that first setup a lot smoother.
 <br><br>
 
 Thoughts
+
 One way to improve adoption could be by exposing a simpler Linux installer for the agent, or even providing a lightweight Docker image that can run on ECS or similar services. This would lower the entry barrier and make the solution more flexible across environments.
 
 
