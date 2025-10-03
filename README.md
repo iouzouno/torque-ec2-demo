@@ -1,5 +1,6 @@
 Torque Terraform EC2 Environment
 
+
 This repository contains a simple Terraform module and Torque blueprint used to deploy an EC2 instance in AWS via the Quali Torque platform. The goal of this project was to demonstrate hands-on experience with Infrastructure as Code (IaC), cloud orchestration, and automation.
 
 Steps Performed
