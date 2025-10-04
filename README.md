@@ -66,6 +66,7 @@ Challenges & Optimizations
 	5.	Optional: Could integrate GitHub Actions for CI/CD to automatically sync Terraform changes to Torque.
 
 Conclusion
+
 Torque is a really strong tool for automating infrastructure orchestration. It gives you fine-grained control over provisioning, helps with user management, provides budget insights, and even tracks drift, along with a lot of other useful features.
 
 The on-prem setup can be a bit complex. You generally need someone with solid DevOps or CloudOps experience to get a Kubernetes cluster up and running for the agent. For some customers, a bit of extra onboarding help or professional services could make that first setup a lot smoother.
